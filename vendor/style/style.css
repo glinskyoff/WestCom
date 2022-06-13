@@ -1660,6 +1660,10 @@ body {
     color: #7A59BE;
 }
 
+.donate-left-left-server-document-child:hover {
+    text-decoration: underline;
+}
+
 .donate-left-right {
     margin-left: 30px;
 }
@@ -1764,4 +1768,70 @@ body {
 .donate-left-right-button:hover {
     background: rgba(122, 89, 190, 0.25);
     transform: 0.2s;
+}
+
+
+/* Server select */
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.select-box .options-container {
+    background-color: red;
+    color: #fff;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+    order: 1;
+}
+
+.selected {
+    background-color: aqua;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    position: relative;
+
+    order: 0;
+}
+
+.selected::after {
+    content: '\25BA';
+    color: white;
+    height: 100%;
+    width: 32px;
+    right: 15px;
+    top: 5px;
+
+    transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    position: fixed;
+}
+
+.select-box .option,
+.selected {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background-color: green;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
 }
