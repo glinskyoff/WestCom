@@ -39,13 +39,6 @@ img {
     padding: 0 15px;
 }
 
-/* .container-server {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-} */
-
 body {
     position: relative;
 }
@@ -392,6 +385,18 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+}
+
+.info-one {
+    padding: 23px 33px 21px 38px;
+}
+
+.info-two {
+    padding: 21px 33px 21px 38px;
+}
+
+.info-three {
+    padding: 21px 44px 21px 47px;
 }
 
 .info-block-one {
@@ -1391,11 +1396,197 @@ body {
         margin-top: 40px;
     }
 
+    .info-one {
+        padding: 20px;
+    }
+    
+    .info-two {
+        padding: 20px;
+    }
+    
+    .info-three {
+        padding: 20px 15px;
+    }
+
+    .info-block {
+        width: 200px;
+    }
+
+    .main-slide-one-title {
+        font-size: 40px;
+    }
+
+    .main-item__slide-one {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+
 }
 
 @media screen and (max-width: 767px) {
     .container {
         max-width: none;
     }
+}
+
+
+
+
+
+
+/* Donate Page */
+
+.donate-bg {
+    background-image: url(/images/donate/donate-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.header-link-donate {
+    background: rgba(122, 89, 190, 0.2);
+    box-shadow: 0px 2.5px 0px #7A59BE;
+    border-radius: 7px;
+
+    padding: 5px 20px 7px 20px;
+
+    display: block;
+    margin-left: 50px;
+    color: #fff;
+    margin-top: -7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.donate__inner {
+    margin-top: 134px;
+    margin-bottom: 303px;
+}
+
+.donate-title {
+    color: #7A59BE;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: 0.02em;
+}
+
+.donate-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.donate-left {
+    background: rgba(9, 0, 16, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 25px 0px 0px 25px;
+    width: 670px;
+    height: 474px;
+}
+
+.donate-left-block {
+    margin-top: 53px;
+    margin-left: 76px;
+}
+
+.donate-left-left-link {
+    display: block;
+    width: 335px;
+    height: 46px;
+    background: rgba(171, 137, 243, 0.05);
+    border: 1px solid rgba(171, 137, 243, 0.5);
+    border-radius: 9px;
+    margin-top: 10px;
+    padding-left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    outline: none;
+}
+
+.donate-left-left-title-steam {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.donate-left-left-title-sum {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-top: 30px;
+}
+
+.donate-left-left-sum {
+    display: block;
+    width: 335px;
+    height: 46px;
+    background: rgba(171, 137, 243, 0.05);
+    border: 1px solid rgba(171, 137, 243, 0.5);
+    border-radius: 9px;
+    margin-top: 10px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    outline: none;
+}
+
+.donate-left-left-title-server {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-top: 30px;
+}
+
+.donate-left-left-server {
+    display: block;
+    width: 335px;
+    height: 46px;
+    margin-top: 10px;
+    outline: none;
+    background: rgba(171, 137, 243, 0.05);
+    border: 1px solid rgba(171, 137, 243, 0.5);
+    border-radius: 9px;
+    padding-left: 13px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+}
+
+.donate-left-left-server-option {
+    background: rgba(171, 137, 243, 1);
+    border-radius: 0px 0px 9px 9px;
+    border: 1px solid rgba(171, 137, 243, 0.5);
+    /* display: block; */
 }
 
