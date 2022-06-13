@@ -61,27 +61,57 @@
                                         <input type="text" placeholder="Введите сумму" class="donate-left-left-sum">
 
                                         <p class="donate-left-left-title-server">Сервер</p>
-                                        <select class="donate-left-left-server">
+                                        <!-- <select class="donate-left-left-server">
                                             <option value="" class="donate-left-left-server-option">Выберите сервер</option>
                                             <option value="1" class="donate-left-left-server-option">Название сервера</option>
                                             <option value="2" class="donate-left-left-server-option">Название сервера</option>
                                             <option value="3" class="donate-left-left-server-option">Название сервера</option>
                                             <option value="4" class="donate-left-left-server-option">Название сервера</option>
-                                        </select>
+                                        </select> -->
+                                        <a href="" class="donate-left-left-server-title">Выберите сервер
+                                            <ul class="donate-left-left-server">
+                                                <li class="donate-left-left-server-option">Название сервера</li>
+                                                <li class="donate-left-left-server-option">Название сервера</li>
+                                                <li class="donate-left-left-server-option">Название сервера</li>
+                                                <li class="donate-left-left-server-option">Название сервера</li>
+                                            </ul>
+                                        </a>
+
+                        
+                                        <!-- <ul class="donate-left-left-server">
+                                            <li class="donate-left-left-server-option">Название сервера</li>
+                                            <li class="donate-left-left-server-option">Название сервера</li>
+                                            <li class="donate-left-left-server-option">Название сервера</li>
+                                            <li class="donate-left-left-server-option">Название сервера</li>
+                                        </ul> -->
                                     </div>
+
                                     <div class="donate-left-right">
                                         <p class="donate-left-right-title-pay">Способ оплаты</p>
-                                        <input type="radio" name="pay" class="donate-left-right-pay-one">
-                                        <input type="radio" name="pay" class="donate-left-right-pay-two">
-                                        <input type="radio" name="pay" class="donate-left-right-pay-three">
+
+                                        <div class="donate-left-right-pay">
+                                            <input type="radio" name="pay" id="pay1" class="donate-left-right-pay-one" checked>
+                                            <label for="pay1" class="donate-left-right-pay-one-label">PayPal</label>
+                                        </div>
+                                        <div class="donate-left-right-pay">
+                                            <input type="radio" name="pay" id="pay2" class="donate-left-right-pay-two">
+                                            <label for="pay2" class="donate-left-right-pay-two-label">QIWI</label>
+                                        </div>
+                                        <div class="donate-left-right-pay">
+                                            <input type="radio" name="pay" id="pay3" class="donate-left-right-pay-three">
+                                            <label for="pay3" class="donate-left-right-pay-three-label">Intelkassa</label>
+                                        </div>
 
                                         <button class="donate-left-right-button">Пополнить</button>
                                     </div>
                                 </div>
+                                <p class="donate-left-left-server-document">Нажимая на кнопку "Пополнить", Вы принимаете <a href="" class="donate-left-left-server-document-child"> пользовательское соглашение </a> и <a href="" class="donate-left-left-server-document-child"> политику обработки персональных данных</a></p>
                             </div>
 
                             <div class="donate-right">
-                                <img src="/images/donate/gift-bg.png" alt="">
+                                <div class="donate-right-img">
+                                    <img src="/images/donate/gift-bg.png" height="476px" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
