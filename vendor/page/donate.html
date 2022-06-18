@@ -35,8 +35,8 @@
                                         </ul>
                                     </li>
                                     <li><a href="" class="header-link">Форум</a></li>
-                                    <li><a href="/vendor/page/donate.html" class="header-link-donate">Донат</a></li>
-                                    <li><a href="" class="header-link">Сервера</a></li>
+                                    <li><a href="/vendor/page/donate.html" class="header-link header-link-donate">Донат</a></li>
+                                    <li><a href="" class="header-link header-link-server">Сервера</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -52,88 +52,158 @@
 
                         <div class="donate-block">
                             <div class="donate-left">
-                                <div class="donate-left-block">
-                                    <div class="donate-left-left">
-                                        <p class="donate-left-left-title-steam">Ссылка на Steam-аккаунт</p>
-                                        <input type="text" placeholder="Введите вашу ссылку" class="donate-left-left-link">
 
-                                        <p class="donate-left-left-title-sum">Сумма</p>
-                                        <input type="text" placeholder="Введите сумму" class="donate-left-left-sum">
+                                <div class="donate-left-wrapper">
 
-                                        <p class="donate-left-left-title-server">Сервер</p>
-                                        <!-- <select class="donate-left-left-server">
-                                            <option value="" class="donate-left-left-server-option">Выберите сервер</option>
-                                            <option value="1" class="donate-left-left-server-option">Название сервера</option>
-                                            <option value="2" class="donate-left-left-server-option">Название сервера</option>
-                                            <option value="3" class="donate-left-left-server-option">Название сервера</option>
-                                            <option value="4" class="donate-left-left-server-option">Название сервера</option>
-                                        </select> -->
-                                        <!-- <a href="" class="donate-left-left-server-title">Выберите сервер
-                                            <ul class="donate-left-left-server">
-                                                <li class="donate-left-left-server-option">Название сервера</li>
-                                                <li class="donate-left-left-server-option">Название сервера</li>
-                                                <li class="donate-left-left-server-option">Название сервера</li>
-                                                <li class="donate-left-left-server-option">Название сервера</li>
-                                            </ul>
-                                        </a> -->
-                                        <!-- <ul class="donate-left-left-server">
-                                            <li class="donate-left-left-server-option">Название сервера</li>
-                                            <li class="donate-left-left-server-option">Название сервера</li>
-                                            <li class="donate-left-left-server-option">Название сервера</li>
-                                            <li class="donate-left-left-server-option">Название сервера</li>
-                                        </ul> -->
+                                    <p class="donate-left-left-title-steam">Ссылка на Steam-аккаунт</p>
+                                    <input type="text" placeholder="Введите вашу ссылку" class="donate-left-left-link">
 
+                                    <p class="donate-left-left-title-sum">Сумма</p>
+                                    <input type="text" placeholder="Введите сумму" class="donate-left-left-sum">
+
+                                    <div class="donate-left-block">
+                                        <div class="donate-left-left">
+                                            
+                                            <p class="donate-left-left-title-server">Сервер</p>
+
+                                            <!-- <div class="dropdown">
+
+                                                <button class="dropdown-button" data-easy-toggle="#dropdown" data-easy-class="show" data-easy-rcoe>
+                                                    <span class="dropdown-button-text">Выберите сервер</span>
+                                                    <span class="dropdown-button-after">
+                                                        <svg width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                        </svg>
+                        
+                                                        <svg class="svg-w0-h0">
+                                                            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                        </svg>
+                        
+                                                        <span class="dropdown-button-arrow" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                    </span>
+                                                </button>
+                                                
+                                                <div id="dropdown" class="dropdown-menu">
+                                                    <a href="" id="one" class="dropdown-link">Сервер №1</a>
+                                                    <a href="" id="two" class="dropdown-link">Сервер №2</a>
+                                                    <a href="" id="three" class="dropdown-link">Сервер №3</a>
+                                                </div>
+
+                                            </div> -->
+
+                                            <div class="select_wrap">
+                                                <ul class="default_option">
+                                                    
+                                                    <li>
+                                                        <div class="option pizza">
+                
+                                                            <p>Выберите сервер</p>
+
+                                                            <div class="icon">
+                                                                <svg class="icon-block" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                                </svg>
+                                
+                                                                <svg class="svg-w0-h0">
+                                                                    <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                                </svg>
+
+                                                                <span class="icon-arrow" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                            </div>
+                                                                
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="select_ul">
+                                                    <li>
+                                                        <div class="option pizza">
+                                                          <p>Сервер №1</p>
+
+                                                          <div class="icon icon-one">
+                                                            <svg class="icon-block icon-block-one" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                            </svg>
                             
+                                                            <svg class="svg-w0-h0">
+                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                            </svg>
 
-                                        <div class="select-box">
-                                            <div class="options-container">
+                                                            <span class="icon-arrow icon-arrow-one" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                        </div>
 
-                                                <div class="option">
-                                                    <input type="radio" class="radio" id="film" name="category">
-                                                    <label for="film">Сервер №1</label>
-                                                </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option burger">
+                                                          <!-- <div class="icon"></div> -->
+                                                          <p>Сервер №2</p>
 
-                                                <div class="option">
-                                                    <input type="radio" class="radio" id="science" name="category">
-                                                    <label for="science">Сервер №2</label>
-                                                </div>
+                                                          <div class="icon icon-two">
+                                                            <svg class="icon-block icon-block-two" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                            </svg>
+                            
+                                                            <svg class="svg-w0-h0">
+                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                            </svg>
 
-                                                <div class="option">
-                                                    <input type="radio" class="radio" id="art" name="category">
-                                                    <label for="art">Сервер №3</label>
-                                                </div>
+                                                            <span class="icon-arrow icon-arrow-two" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                        </div>
+                                                        </div>  
+                                                    </li>
+                                                    <li>
+                                                        <div class="option ice">
+                                                          <!-- <div class="icon"></div> -->
+                                                          <p>Сервер №3</p>
 
-                                                <div class="option">
-                                                    <input type="radio" class="radio" id="music" name="category">
-                                                    <label for="music">Сервер №4</label>
-                                                </div>
+                                                          <div class="icon icon-three">
+                                                            <svg class="icon-block icon-block-three" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                            </svg>
+                            
+                                                            <svg class="svg-w0-h0">
+                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                            </svg>
+
+                                                            <span class="icon-arrow icon-arrow-three" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                        </div>
+                                                        </div>  
+                                                    </li>
+                                                    <li>
+                                                      <div class="option fries">
+                                                          <!-- <div class="icon"></div> -->
+                                                          <p>Сервер №4</p>
+
+                                                          <div class="icon icon-four">
+                                                            <svg class="icon-block icon-block-four" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                            </svg>
+                            
+                                                            <svg class="svg-w0-h0">
+                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                            </svg>
+
+                                                            <span class="icon-arrow icon-arrow-four" data-easy-class="rotate-arrow" data-easy-rcoe></span>
+                                                        </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
                                             </div>
-                                            <div class="selected">Выберите сервер</div>
+
                                         </div>
 
-                                        
-                                    </div>
-
-                                    <div class="donate-left-right">
-                                        <p class="donate-left-right-title-pay">Способ оплаты</p>
-
-                                        <div class="donate-left-right-pay">
-                                            <input type="radio" name="pay" id="pay1" class="donate-left-right-pay-one" checked>
-                                            <label for="pay1" class="donate-left-right-pay-one-label">PayPal</label>
+                                        <div class="donate-left-right">
+                                            <button class="donate-left-right-button">Пополнить</button>
                                         </div>
-                                        <div class="donate-left-right-pay">
-                                            <input type="radio" name="pay" id="pay2" class="donate-left-right-pay-two">
-                                            <label for="pay2" class="donate-left-right-pay-two-label">QIWI</label>
-                                        </div>
-                                        <div class="donate-left-right-pay">
-                                            <input type="radio" name="pay" id="pay3" class="donate-left-right-pay-three">
-                                            <label for="pay3" class="donate-left-right-pay-three-label">Intelkassa</label>
-                                        </div>
-
-                                        <button class="donate-left-right-button">Пополнить</button>
                                     </div>
                                 </div>
-                                <p class="donate-left-left-server-document">Нажимая на кнопку "Пополнить", Вы принимаете <a href="" class="donate-left-left-server-document-child"> пользовательское соглашение </a> и <a href="" class="donate-left-left-server-document-child"> политику обработки персональных данных</a></p>
+
+                                <div class="donate-right-right">
+                                    <p class="donate-left-left-server-document">Нажимая на кнопку "Пополнить", Вы принимаете <a href="" class="donate-left-left-server-document-child"> пользовательское соглашение </a> и <a href="" class="donate-left-left-server-document-child"> политику обработки персональных данных</a></p>
+                             
+                                </div>
                             </div>
 
                             <div class="donate-right">
@@ -163,5 +233,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/ease-toggle.js"></script>
 </body>
 </html>

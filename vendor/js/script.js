@@ -80,17 +80,40 @@ $(function () {
 
 })
 
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
-const optionsList = document.querySelectorAll(".option");
+$(".default_option").click(function(){
+  $(this).parent().toggleClass("active");
 
-selected.addEventListener("click", () => {
-  optionsContainer.classList.toggle("active");
-});
+  $('.icon-one').css('display', 'none');
+  $('.icon-two').css('display', 'none');
+  $('.icon-three').css('display', 'none');
+  $('.icon-four').css('display', 'none');
+  
+  // if ($('.icon-one')) {
+  //   $('.icon-two').css('display', 'none');
+  //   $('.icon-three').css('display', 'none');
+  //   $('.icon-four').css('display', 'none');
+  // } else if ($('.icon-two')) {
+  //   $('.icon-one').css('display', 'none');
+  //   $('.icon-three').css('display', 'none');
+  //   $('.icon-four').css('display', 'none');
+  // }
+  
 
-optionsList.forEach(o => {
-  o.addEventListener("click", () => {
-    selected.innerHTML = o.querySelector("label").innerHTML;
-    optionsContainer.classList.remove("active");
-  });
-});
+  // $(this).children().removeClass('icon');
+})
+
+$(".select_ul li").click(function(){
+  var currentele = $(this).html();
+  $(".default_option li").html(currentele);
+  $(this).parents(".select_wrap").removeClass("active");
+
+
+  $('.icon-one').css('display', 'block');
+  $('.icon-two').css('display', 'block');
+  $('.icon-three').css('display', 'block');
+  $('.icon-four').css('display', 'block');
+  // $('.icon-all').addClass('active-all');
+  // $('.icon-block-all').addClass('active-all');
+  // $('.icon-arrow-all').addClass('active-all');
+
+})
