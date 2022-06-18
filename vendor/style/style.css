@@ -1811,9 +1811,10 @@ body {
     background: rgba(171, 137, 243, 0.05);
 }
 
-.select_wrap .option{
-  display: flex;
-  align-items: center;
+.select_wrap .option {
+    position: relaitve;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
