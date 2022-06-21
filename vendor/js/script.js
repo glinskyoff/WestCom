@@ -5,11 +5,28 @@ $(function () {
     dots: true,
     sliderToShow: 1,
     sliderToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2500,
     dotsClass: 'main-slider-dots',
   })
 
+})
+
+$(function () {
+  $('.slider-server-page').slick ({
+    arrows: false,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    verticalSwiping: true,
+    vertical: true,
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    touchThreshold: 5
+ 
+  })
 })
 
 $(function () {
@@ -87,8 +104,6 @@ $(".default_option").click(function(){
   $('.icon-two').css('display', 'none');
   $('.icon-three').css('display', 'none');
   $('.icon-four').css('display', 'none');
-
-  // $(this).children().removeClass('icon');
 })
 
 let server;
@@ -104,8 +119,5 @@ $(".select_ul li").click(function(){
   $('.icon-two').css('display', 'block');
   $('.icon-three').css('display', 'block');
   $('.icon-four').css('display', 'block');
-  // $('.icon-all').addClass('active-all');
-  // $('.icon-block-all').addClass('active-all');
-  // $('.icon-arrow-all').addClass('active-all');
 
 })
