@@ -5,8 +5,8 @@ $(function () {
     dots: true,
     sliderToShow: 1,
     sliderToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 2500,
     dotsClass: 'main-slider-dots',
   })
 
