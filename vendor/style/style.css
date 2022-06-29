@@ -2763,13 +2763,23 @@ body {
         margin-right: 55px;
     }
 
+    .intro-info-button-arrow {
+        right: 0px;
+    }
+
+    .intro-info-button-arrow:after {
+        transform: rotate(90deg);
+        right: 13px;
+    }
+
 }
 
 @media screen and (max-width: 590px) {
     .info__inner {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 275px;
         grid-template-rows: repeat(3, 90px);
+        justify-content: center;
         grid-template-areas: 
             "info-one"
             "info-two"
