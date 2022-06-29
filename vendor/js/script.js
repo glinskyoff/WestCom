@@ -136,10 +136,6 @@ $(".select_ul-server li").click(function(){
 
 });
 
-// function media_to() {
-//   var slider_index = $('.slide').attr('data-slide').val();
-//   $('.main-slider').slick('slickGoTo', slider_index);
-// }
 
 $('.header-link-main-first-li[data-slide]').click(function(e) {
   e.preventDefault();
