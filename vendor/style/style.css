@@ -1167,7 +1167,7 @@ body {
     margin-right: 12px;
     vertical-align: middle;
 
-    background-image: url(images/logo.svg);
+    background-image: url(./images/logo.svg);
     width: 69px;
     height: 42px;
     background-repeat: no-repeat;
@@ -1237,7 +1237,7 @@ body {
     margin-right: 15px;
     vertical-align: middle;
 
-    background-image: url(images/media-vk.svg);
+    background-image: url(./images/media-vk.svg);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@ body {
     margin-right: 15px;
     vertical-align: middle;
 
-    background-image: url(images/media-steam.svg);
+    background-image: url(./images/media-steam.svg);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -1299,7 +1299,7 @@ body {
     margin-right: 15px;
     vertical-align: middle;
 
-    background-image: url(images/media-discord.svg);
+    background-image: url(./images/media-discord.svg);
     width: 30px;
     height: 22.5px;
     background-repeat: no-repeat;
