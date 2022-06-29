@@ -322,7 +322,7 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 200px;
+    width: 300px;
     height: 100%;
     margin: 0;
     padding: 80px 0;
@@ -574,7 +574,7 @@ body {
 }
 
 .slide {
-    margin-top: 49px !important;
+    margin-top: 90px !important;
     margin-bottom: 46px !important;
 }
 
@@ -775,7 +775,7 @@ body {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     max-width: 822px;
-    margin-top: 30px;
+    margin-top: 46px;
 }
 
 .main-item__slide-three {
@@ -798,7 +798,7 @@ body {
 }
 
 .main-slide-three-team {
-    margin-top: 45px;
+    margin-top: 46px;
 }
 
 .team-item {
@@ -1138,6 +1138,7 @@ body {
 .footer {
     display: flex;
     background-color: #090010;
+    margin-top: -1px;
 }
 
 .footer__inner {
@@ -1183,6 +1184,12 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+    transition: 0.5s;
+}
+
+.footer-desc:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
 }
 
 .footer-desc-margin {
@@ -1198,8 +1205,6 @@ body {
     letter-spacing: 0.02em;
     margin-top: 30px;
 }
-
-
 
 .footer-right-left-title {
     color: #fff;
@@ -1220,6 +1225,10 @@ body {
     letter-spacing: 0.02em;
     font-weight: 400;
     position: relative;
+}
+
+.footer-right-left-link-vk:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .footer-right-left-link-vk::before {
@@ -1249,6 +1258,10 @@ body {
     position: relative;
 }
 
+.footer-right-left-link-steam:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .footer-right-left-link-steam::before {
     content: '';
     display: inline-block;
@@ -1274,6 +1287,10 @@ body {
     letter-spacing: 0.02em;
     font-weight: 400;
     position: relative;
+}
+
+.footer-right-left-link-discord:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .footer-right-left-link-discord::before {
@@ -1306,12 +1323,16 @@ body {
     letter-spacing: 0.02em;
 }
 
+.footer-right-right-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .footer-right-right-link-margin {
     margin-top: 10px;
 }
 
 .footer-right-right-link-margin:first-child {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-right-left {
@@ -2622,7 +2643,7 @@ body {
             "info-one info-two"
             "info-three info-four"
         ;
-        margin-top: 60px;
+        margin-top: 90px;
         margin-bottom: 0px;
     }
 
