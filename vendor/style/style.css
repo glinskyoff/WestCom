@@ -450,7 +450,7 @@ body {
     display: block;
     position: absolute;
     z-index: -2;
-    background-image: url(images/arrow.svg);
+    background-image: url(../../images/arrow.svg);
     width: 20px;
     height: 18px;
     top: calc(50% - 10px);
@@ -2153,7 +2153,7 @@ body {
 }
 
 .politics-bg {
-    background-image: url(images/donate/donate-bg.png);
+    background-image: url(../../images/donate/donate-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
