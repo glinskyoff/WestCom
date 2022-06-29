@@ -2759,6 +2759,10 @@ body {
         margin-top: 50px;
     }
 
+    .footer-right-right {
+        margin-right: 55px;
+    }
+
 }
 
 @media screen and (max-width: 590px) {
@@ -3005,7 +3009,7 @@ body {
     }
 
     .footer-right {
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
 }
