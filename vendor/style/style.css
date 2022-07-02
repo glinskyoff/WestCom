@@ -31,12 +31,14 @@
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 li,
 ol,
 ul {
     list-style-type: none;
+    outline: none;
 }
 
 img {
@@ -378,9 +380,6 @@ body {
 }
 
 /* Hamburger Menu */
-/* .menu {
-    display: none;
-} */
 
 .menu {
     display: none;
@@ -476,8 +475,8 @@ body {
 }
 
 .menu__item-margin {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .menu__item:hover {
@@ -2769,6 +2768,10 @@ body {
 @media screen and (max-width: 767px) {
     .container {
         max-width: none;
+    }
+
+    *::-webkit-scrollbar {
+        width: 1px;
     }
 
     .header-left {
