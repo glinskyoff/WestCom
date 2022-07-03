@@ -154,7 +154,7 @@ $(function(){
     event.preventDefault();
     
     var sc = $(this).attr("href"),
-        dn = $(sc).offset().top - 50;
+        dn = $(sc).offset().top - 100;
 
     $('html, body').animate({scrollTop: dn}, 1000);
 
