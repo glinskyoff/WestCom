@@ -32,6 +32,9 @@
 a {
     text-decoration: none;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    background-color: transparent;
 }
 
 li,
@@ -472,15 +475,21 @@ body {
     text-decoration: 600;
     text-decoration: none;
     transition-duration: .25s;
+
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    background-color: transparent;
 }
 
 .menu__item-margin {
     margin-top: 15%;
     margin-bottom: 15%;
-}
 
-.menu__item:hover {
-    background-color: #333;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    background-color: transparent;
 }
 
 .menu__box-bottom {
@@ -808,7 +817,6 @@ body {
     border-radius: 20px;
     width: 270px;
     height: 90px;
-    /* padding: 21px 74px 21px 90px; */
     display: flex;
     justify-content: flex-start;
     margin-top: 46px;
@@ -829,7 +837,6 @@ body {
     border-radius: 20px;
     width: 270px;
     height: 90px;
-    /* padding: 21px 74px 21px 90px; */
     display: flex;
     justify-content: flex-start;
     margin-top: 46px;
@@ -850,7 +857,6 @@ body {
     border-radius: 20px;
     width: 270px;
     height: 90px;
-    /* padding: 21px 74px 21px 90px; */
     display: flex;
     justify-content: flex-start;
     margin-top: 46px;
@@ -1507,11 +1513,6 @@ body {
 }
 
 .donate-block {
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%; */
     display: grid;
     grid-template-columns: 688px 1fr;
 
@@ -1523,7 +1524,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 25px 0px 0px 25px;
-    /* width: 670px; */
     height: 476px;
 }
 
@@ -1645,7 +1645,6 @@ body {
     background: rgba(171, 137, 243, 0.05);
     border: 1px solid rgba(171, 137, 243, 0.5);
     border-radius: 0px 0px 9px 9px;
-    /* margin-bottom: 10px; */
     color: #fff;
     display: none;
 }
@@ -1809,8 +1808,6 @@ body {
     top: 56px;
     left: 0px;
     width: 338px;
-    /* background-color: #090010; */
-    /* border: 1px solid rgba(171, 137, 243, 0.5); */
     background: rgba(9, 0, 16, 0.85);
     backdrop-filter: blur(10px);
     border-radius: 9px !important;
