@@ -22,9 +22,20 @@ $(function () {
     verticalSwiping: true,
     vertical: true,
     draggable: true,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    touchThreshold: 5
+    // autoplay: true,
+    // autoplaySpeed: 2500,
+    touchThreshold: 5,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          slidesToShow: 1,
+          // centerMode: true
+        }
+      }
+    ]
  
   })
 })
