@@ -2577,6 +2577,24 @@ img {
         margin-right: -2px;
     }
 
+    /* Poilitics */
+
+    .politics-block-container {
+        padding: 25px 30px;
+    }
+
+    .politics-title {
+        font-size: 40px;
+    }
+    
+    .politics-block {
+        margin: 20px 0;
+    }
+
+    .politics-desc {
+        text-align: justify;
+    }
+
 
 }
 
@@ -3219,6 +3237,13 @@ img {
         justify-content: center;
     }
 
+    /* Politics */
+
+    .politics-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
 }
 
 /* Media for max-width 590 */
@@ -3561,6 +3586,13 @@ img {
         margin-top: 111px;
     }
 
+    /* Politics */
+
+    .politics-title {
+        font-size: 29px;
+        text-align: center;
+    }
+
 }
 
 /* Media for max-width 500 */
@@ -3577,6 +3609,18 @@ img {
         font-size: 15px;
         margin-left: 10px;
         margin-top: -2px;
+    }
+
+    /* Politics */
+
+    .politics-title {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .politics-block-container {
+        padding: 15px 15px;
     }
 }
 
@@ -3794,6 +3838,14 @@ img {
 
     .server-page-title-personal {
         text-align: center;
+    }
+
+    
+    /* Politics */
+
+    .politics-title {
+        font-size: 30px;
+        line-height: 40px;
     }
 }
 
