@@ -1,2 +1,3 @@
-vendor/* linguist-documentation=false
-vendor/* linguist-vendored
+
+
+dist/* linguist-vendored=false
