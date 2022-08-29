@@ -115,6 +115,7 @@ $(".default_option").click(function(){
   $('.icon-two').css('display', 'none');
   $('.icon-three').css('display', 'none');
   $('.icon-four').css('display', 'none');
+
 });
 
 let server;
@@ -165,9 +166,18 @@ $(function(){
     event.preventDefault();
     
     var sc = $(this).attr("href"),
-        dn = $(sc).offset().top - 100;
+        dn = $(sc).offset().top - 50;
 
     $('html, body').animate({scrollTop: dn}, 1000);
 
   });
 });
+
+
+
+
+
+
+
+
+
