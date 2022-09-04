@@ -1945,6 +1945,11 @@ img {
     color: #fff;
 }
 
+.select_ul-server-link a {
+    display: block;
+    
+}
+
 .server-page-list {
     width: 293px;
     margin-top: 10px;
