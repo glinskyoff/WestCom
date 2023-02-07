@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,23 +30,31 @@
                         </div>
 
                         <div class="header-right">
-                            <nav>
-                                <ul class="header-nav">
-                                    <li><a href="../../index.html" class="header-link">Главная</a></li>
-                                    <li><a href="../page/donate.html" class="header-link header-link-donate">Донат</a></li>
 
-                                    <!-- <li><a href="../page/server.html" class="header-link">Сервера</a></li> -->
+                            <ul class="header-nav">
 
-                                    <li class="header-relative"><p class="header-link header-link-server-list">Сервера</p>
-                                        <ul class="header-nav-server">
-                                            <li class="header-link-server-first-li"><a href="server-one.html" class="header-link-server-first">Сервер №1</a></li>
-                                            <li class="header-link-server-second-li"><a href="server-two.html" class="header-link-server-second">Сервер №2</a></li>
-                                            <li class="header-link-server-three-li"><a href="server-three.html" class="header-link-server-three">Сервер №3</a></li>
-                                            <li class="header-link-server-four-li"><a href="server-four.html" class="header-link-server-four">Сервер №4</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+                                <li class="header-nav-single">
+                                    <a href="../../index.html" class="header-nav-link">Главная</a>
+                                </li>
+
+
+                                <li class="header-nav-active-nobox">
+                                    <a href="./vendor/page/donate.html" class="header-nav-link">Донат</a>
+                                </li>
+
+
+                                <li class="header-nav-several">
+                                    <a href="" class="header-nav-link" onclick="return false">Сервера</a>
+                                    <div class="header-nav-content">
+                                        <a href="./server-one.html">Сервер №1</a>
+                                        <a href="./server-two.html">Сервер №2</a>
+                                        <a href="./server-three.html">Сервер №3</a>
+                                        <a href="./server-four.html">Сервер №4</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
                         </div>
 
                         <div class="menu">
@@ -92,8 +100,8 @@
 
                                 <div class="donate-left-wrapper">
 
-                                    <p class="donate-left-left-title-steam">Ссылка на Steam-аккаунт</p>
-                                    <input type="text" placeholder="Введите вашу ссылку" class="donate-left-left-link">
+                                    <p class="donate-left-left-title-steam">SteamID</p>
+                                    <input type="text" placeholder="Введите ваш SteamID" class="donate-left-left-link">
 
                                     <p class="donate-left-left-title-sum">Сумма</p>
                                     <input type="text" placeholder="Введите сумму" class="donate-left-left-sum">
@@ -103,108 +111,20 @@
                                             
                                             <p class="donate-left-left-title-server">Сервер</p>
 
+                                            <div class="donate-server">
+                                                <p class="donate-server-title">Выберите сервер</p>
+                                                <svg class="path">
+                                                    <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
+                                                    <path id="my-clip-path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
+                                                </svg>
 
-                                            <div class="select_wrap" id="close_list">
-                                                <ul class="default_option">
-                                                    
-                                                    <li>
-                                                        <div class="option pizza">
-                
-                                                            <p>Выберите сервер</p>
-
-                                                            <div class="icon">
-                                                                <svg class="icon-block" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
-                                                                </svg>
-                                
-                                                                <svg class="svg-w0-h0">
-                                                                    <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
-                                                                </svg>
-
-                                                                <span class="icon-arrow" data-easy-class="rotate-arrow" data-easy-rcoe></span>
-                                                            </div>
-                                                                
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                                <ul class="select_ul">
-                                                    <li>
-                                                        <div class="option pizza">
-                                                          <p>Сервер №1</p>
-
-                                                          <div class="icon icon-one">
-                                                            <svg class="icon-block icon-block-one" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
-                                                            </svg>
-                            
-                                                            <svg class="svg-w0-h0">
-                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
-                                                            </svg>
-
-                                                            <span class="icon-arrow icon-arrow-one" data-easy-class="rotate-arrow" data-easy-rcoe></span>
-                                                        </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="option burger">
-                                                          <!-- <div class="icon"></div> -->
-                                                          <p>Сервер №2</p>
-
-                                                          <div class="icon icon-two">
-                                                            <svg class="icon-block icon-block-two" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
-                                                            </svg>
-                            
-                                                            <svg class="svg-w0-h0">
-                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
-                                                            </svg>
-
-                                                            <span class="icon-arrow icon-arrow-two" data-easy-class="rotate-arrow" data-easy-rcoe></span>
-                                                        </div>
-                                                        </div>  
-                                                    </li>
-                                                    <li>
-                                                        <div class="option ice">
-                                                          <!-- <div class="icon"></div> -->
-                                                          <p>Сервер №3</p>
-
-                                                          <div class="icon icon-three">
-                                                            <svg class="icon-block icon-block-three" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
-                                                            </svg>
-                            
-                                                            <svg class="svg-w0-h0">
-                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
-                                                            </svg>
-
-                                                            <span class="icon-arrow icon-arrow-three" data-easy-class="rotate-arrow" data-easy-rcoe></span>
-                                                        </div>
-                                                        </div>  
-                                                    </li>
-                                                    <li>
-                                                      <div class="option fries">
-                                                          <!-- <div class="icon"></div> -->
-                                                          <p>Сервер №4</p>
-
-                                                          <div class="icon icon-four">
-                                                            <svg class="icon-block icon-block-four" width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46H44C48.9706 46 53 41.9706 53 37V9C53 4.02944 48.9706 0 44 0H0C4.97056 0 9 4.02944 9 9V37C9 41.9706 4.97056 46 0 46Z" fill="transparent"/>
-                                                            </svg>
-                            
-                                                            <svg class="svg-w0-h0">
-                                                                <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 H0.83 C0.924,1,1,0.912,1,0.804 V0.196 C1,0.088,0.924,0,0.83,0 H0 C0.094,0,0.17,0.088,0.17,0.196 V0.804 C0.17,0.912,0.094,1,0,1"></path></clipPath>
-                                                            </svg>
-
-                                                            <span class="icon-arrow icon-arrow-four" data-easy-class="rotate-arrow" data-easy-rcoe></span>
-                                                        </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
+                                                <div class="donate-server-block">
+                                                    <p href="" onclick="changeText('Сервер №1')">Сервер №1</p>
+                                                    <p href="" onclick="changeText('Сервер №2')">Сервер №2</p>
+                                                    <p href="" onclick="changeText('Сервер №3')">Сервер №3</p>
+                                                    <p href="" onclick="changeText('Сервер №4')">Сервер №4</p>
+                                                </div>
                                             </div>
-
                                         </div>
 
                                         <div class="donate-left-right">

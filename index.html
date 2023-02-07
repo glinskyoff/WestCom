@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="Publisher-URL" Content="http://www.westcom-games.ru/"> -->
     <link rel="stylesheet" href="vendor/style/style.css">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -32,29 +31,34 @@
                         </div>
 
                         <div class="header-right">
-                            <nav>
-                                <ul class="header-nav">
-                                    <li><a href="index.html" class="header-link header-link-first header-link-main">Главная</a>
-                                        <ul class="header-nav-main">
-                                            <li class="header-link-main-first-li" data-slide="1"><a href="#slider" class="header-link-main-first">Медиа</a></li>
-                                            <li class="header-link-main-second-li" data-slide="3"><a href="#slider" class="header-link-main-second">Dev-team</a></li>
-                                        </ul>
-                                    </li>
-                                    <!-- <li><a href="" class="header-link">Форум</a></li> -->
-                                    <li><a href="vendor/page/donate.html" class="header-link">Донат</a></li>
 
-                                    <!-- <a href="" class="header-link header-link-server-list">Сервера</a> -->
+                            <ul class="header-nav">
 
-                                    <li class="header-relative"><p class="header-link header-link-server-list">Сервера</p>
-                                        <ul class="header-nav-server">
-                                            <li class="header-link-server-first-li"><a href="./vendor/page/server-one.html" class="header-link-server-first">Сервер №1</a></li>
-                                            <li class="header-link-server-second-li"><a href="./vendor/page/server-two.html" class="header-link-server-second">Сервер №2</a></li>
-                                            <li class="header-link-server-three-li"><a href="./vendor/page/server-three.html" class="header-link-server-three">Сервер №3</a></li>
-                                            <li class="header-link-server-four-li"><a href="./vendor/page/server-four.html" class="header-link-server-four">Сервер №4</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+                                <li class="header-nav-active">
+                                    <a href="" onclick="return false" class="header-nav-link">Главная</a>
+                                    <div class="header-nav-content">
+                                        <a href="#slider" class="to-slider" data-slide="1">Медиа</a>
+                                        <a href="#slider" class="to-slider" data-slide="3">Dev-team</a>
+                                    </div>
+                                </li>
+
+                                <li class="header-nav-single">
+                                    <a href="./vendor/page/donate.html" class="header-nav-link">Донат</a>
+                                </li>
+
+                                <li class="header-nav-several">
+                                    <a href="" class="header-nav-link" onclick="return false">Сервера</a>
+                                    <div class="header-nav-content">
+                                        <a href="./vendor/page/server-one.html">Сервер №1</a>
+                                        <a href="./vendor/page/server-two.html">Сервер №2</a>
+                                        <a href="./vendor/page/server-three.html">Сервер №3</a>
+                                        <a href="./vendor/page/server-four.html">Сервер №4</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+            
                         </div>
 
                         <div class="menu">
@@ -160,149 +164,164 @@
 
             <!-- Media Block -->
             <section class="media" id="slider">
-                <!-- <div class="container"> -->
-                    <div class="media__inner">
+                <div class="mediaInner">
 
-                        <div class="main-slider">
-                            <div class="slide">
-
-                                <div class="main-item__slide-one">
-                                    <div class="main-slide-one-left">
-                                        <p class="main-slide-one-title">Медиа</p>
+                    <div class="main-slider">
+                        <div class="slide">
+                            <div class="container">
+                                
+                                <div class="main-slider-block">
+                                    <div class="main-slider-block-left">
+                                        <p class="main-slide-title">Медиа</p>
 
                                         <div class="main-swiper-block">
-                                            <section class="main-swiper-slider-item-vk">
-                                                <a href="https://vk.com/feed" target="_blank" class="main-swiper-slider-item-flex">
+                                            <section class="main-swiper-slider-item">
+                                                <a href="https://vk.com/feed" target="_blank">
                                                     <img src="./images/media-vk.svg" alt="" srcset="">
                                                     <div class="main-swiper-slider-item-block">
-                                                        <p class="main-swiper-slide-item">Группа</p>
-                                                        <p class="main-swiper-slide-item">ВКонтакте</p>
+                                                        <p>Группа</p>
+                                                        <p>ВКонтакте</p>
                                                     </div>
                                                 </a>
                                             </section>
 
-                                            <section class="main-swiper-slider-item-steam">
-                                                <a href="https://store.steampowered.com/" target="_blank" class="main-swiper-slider-item-flex flex-steam">
+                                            <section class="main-swiper-slider-item">
+                                                <a href="https://store.steampowered.com/" target="_blank">
                                                     <img src="./images/media-steam.svg" alt="" srcset="">
                                                     <div class="main-swiper-slider-item-block">
-                                                        <p class="main-swiper-slide-item">Группа</p>
-                                                        <p class="main-swiper-slide-item">Steam</p>
+                                                        <p>Группа</p>
+                                                        <p>Steam</p>
                                                     </div>
                                                 </a>
                                             </section>
 
-                                            <section class="main-swiper-slider-item-discord">
-                                                <a href="https://discord.com/" target="_blank" class="main-swiper-slider-item-flex flex-discord">
+                                            <section class="main-swiper-slider-item">
+                                                <a href="https://discord.com/" target="_blank">
                                                     <img src="./images/media-discord.svg" alt="" srcset="">
                                                     <div class="main-swiper-slider-item-block">
-                                                        <p class="main-swiper-slide-item">Дискорд</p>
-                                                        <p class="main-swiper-slide-item">Сервера</p>
+                                                        <p>Дискорд</p>
+                                                        <p>Сервера</p>
                                                     </div>
                                                 </a>
                                             </section>
-                                            
-                                        </div>
 
+                                        </div>
                                     </div>
 
-                                    <div class="main-slide-one-right">
-                                        <div class="swiper-right">
-                                            <img src="images/media-bg.png" alt="">
-                                        </div>
+                                    <div class="main-slider-block-right">
+                                        <img src="images/media-bg.png" alt="">
                                     </div>
                                 </div>
 
                             </div>
-
-                            <div class="slide">
-
-                                <div class="main-item__slide-two">
-                                    <div class="main-slide-two-left">
-                                        <p class="main-slide-two-title">Задача</p>
-                                        <div class="main-slide-two-desc">
-                                            <p>Мы сфокусированы на создании уникальных проектов для комфортной игры в gmod’е, также мы стараемся создать приятную атмосферу для игроков, мы вкладываем усилия в каждый свой проект</p>
-                                        </div>
-                                        </div>
-                                    <div class="main-slide-two-right">
-                                        <div class="main-slide-two-right-img">
-                                            <img src="images/media-bg-two.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="slide">
-
-                                <div class="main-item__slide-three">
-                                    <div class="main-slide-three-left">
-                                        <p class="main-slide-three-title">Dev-team</p>
-
-                                        <div class="main-slide-three-team">
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text team-item-one-block-bottom">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text team-item-one-block-bottom">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                            <a href="https://vk.com/feed" target="_blank" class="team-item team-item-text team-item-one-block-bottom">
-                                                <img src="images/avatar.png" alt="">
-                                                
-                                                <div class="team-item-one-block">
-                                                    <div class="team-item-name">shiro</div>
-                                                    <div class="team-item-job">Дизайнер</div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="main-slide-three-right">
-                                        <img src="images/media-bg-three.png" alt="">
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            
                         </div>
 
+                        <div class="slide">
+                            <div class="container">
+                                
+                                <div class="main-slider-block">
+                                    <div class="main-slider-block-left">
+                                        <p class="secondary-slide-title">Задача</p>
+                                        <p class="main-slide-desc">Мы сфокусированы на создании уникальных проектов для комфортной игры в gmod’е, также мы стараемся создать приятную атмосферу для игроков, мы вкладываем усилия в каждый свой проект</p>
+                                    </div>
+
+                                    <div class="main-slider-block-right">
+                                        <img src="images/media-bg-two.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="container">
+                                
+                                <div class="main-slider-block">
+                                    <div class="team-slider-block-left">
+                                        <p class="secondary-slide-title">Dev-team</p>
+
+                                        <div class="team-slider-block">
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Дизайнер</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Управляющий</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Сооснователь</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Дизайнер</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Управляющий</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vk.com/feed" target="_blank" class="team-block">
+                                                <div class="team-block-flex">
+                                                    <img src="images/avatar_shiro.png" width="90" height="90" alt="avatar">
+                                                    
+                                                    <div class="team-block-bottom">
+                                                        <p class="team-block-bottom-name">shiro</p>
+                                                        <p class="team-block-bottom-job">Сооснователь</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="team-slider-block-right">
+                                        <img src="images/media-bg-three.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                <!-- </div> -->
+
+                </div>
             </section>
         </div>
 
