@@ -683,6 +683,10 @@ img {
     cursor: pointer;
 }
 
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
 /* Slider Title */
 .team-block {
     margin-right: 35px;
@@ -1816,7 +1820,7 @@ img {
 .document-server-title::before {
     content: '';
     clip-path: url(#my-clip-path);
-    z-index: 999999;
+    z-index: 99999;
     height: inherit;
     display: block;
     width: 53px;
@@ -1829,7 +1833,7 @@ img {
 .document-server-title::after {
     content: '';
     position: absolute;
-    z-index: 999999;
+    z-index: 99999;
     background-image: url(../../images/arrow.svg);
     width: 20px;
     height: 18px;
@@ -2041,7 +2045,7 @@ img {
     
     .team-slider-block {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         margin-top: 20px;
     }
@@ -2125,10 +2129,6 @@ img {
         margin-right: 10px;
     }
 
-    .server-block-left-two {
-        margin-top: 30px;
-    }
-
     .server-block-right-two {
         margin-top: 30px;
     }
@@ -2166,7 +2166,7 @@ img {
     }
 
     .server-page-right {
-        margin-right: -2px;
+        margin-right: 5px;
     }
 
     /* Poilitics */
@@ -2507,13 +2507,25 @@ img {
     }
 
     .team-block::before {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
     }
 
     .team-block img {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .team-slider-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 100px;
+        grid-template-rows: repeat(2, 90px);
+        justify-items: center;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .info-one {
@@ -2530,7 +2542,6 @@ img {
 
     .main-item__slide-one {
         display: block;
-        /* justify-content: center; */
     }
 
     .main-slide-one-title {
@@ -2553,7 +2564,6 @@ img {
 
     .main-item__slide-three {
         display: block;
-        /* justify-content: center; */
     }
 
     .info-block {
@@ -2695,7 +2705,6 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-left: 0px; */
     }
 
     .slider-text:hover {
@@ -2783,15 +2792,19 @@ img {
     .slider-server-page .slick-list .slick-track .slick-slide {
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        margin: 0 2px;
+        width: 100%;
     }
 
     /* Donate */
-    .donate-server-title {
-        width: 280px;
-    }
-
     .donate-left-left-server-document {
         width: 100%;
+    }
+
+    .donate-server-title {
+        width: 280px;
     }
 
     .document-server-block {
@@ -2848,7 +2861,7 @@ img {
         margin-right: 0px;
     }
 
-    .team-block::before {
+    /* .team-block::before {
         width: 90px;
         height: 90px;
     }
@@ -2856,7 +2869,7 @@ img {
     .team-block img {
         width: 90px;
         height: 90px;
-    }
+    } */
 
     .server__inner {
         margin-top: 20px;
@@ -3087,6 +3100,9 @@ img {
     }
 
     /* Donate */
+    .donate-server-title {
+        width: 100%;
+    }
 
     .donate-left {
         height: 100%;
@@ -3191,10 +3207,6 @@ img {
     }
 
     /* Slider */
-    .team-slider-block {
-        gap: 50px;
-    }
-
     .team-block img {
         width: 60px;
         height: 60px;
@@ -3219,7 +3231,6 @@ img {
     }
 
     /* Politics */
-
     .politics-title {
         font-size: 40px;
         line-height: 40px;
@@ -3267,7 +3278,8 @@ img {
     }
 
     .team-slider-block {
-        gap: 50px;
+        column-gap: 20px;
+        row-gap: 70px;
     }
     
     .slider-people-block {
@@ -3441,8 +3453,8 @@ img {
     .document-main-block {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 20px;
-        row-gap: 100px;
+        column-gap: 10px;
+        row-gap: 120px;
         grid-template-rows: repeat(2, 90px);
         justify-items: center;
         align-items: center;
