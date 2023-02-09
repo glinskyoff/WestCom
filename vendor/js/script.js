@@ -5,8 +5,8 @@ $(function () {
     dots: true,
     sliderToShow: 1,
     sliderToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2500,
     dotsClass: 'main-slider-dots',
   })
 
@@ -22,8 +22,8 @@ $(function () {
     verticalSwiping: true,
     vertical: true,
     draggable: true,
-    // autoplay: true,
-    // autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2500,
     touchThreshold: 5,
     responsive: [
       {
